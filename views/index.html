@@ -4,132 +4,212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../assets/css/layout.css">
+    <!-- <link rel="stylesheet" href="../assets/css/layout.css"> -->
+    <link rel="stylesheet" href="../assets/css/output.css">
+    <link rel="stylesheet" href="../assets/css/tailwind.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
+
 <body>
-    <div class="wrap">
-        <div class="content">
-            <div>
+  <div class="wrap" >
+    <div class="content">
 
-            </div>
-            <div class="">
-                <main>
-                    <article class="work-area">
-                        <div class="work-head-thumbnail">
-                            <svg xmlns="http://www.w3.org/2000/svg" role="img" aria-label="OKMS" width="200" height="44" viewBox="0 0 200 44" fill="none"><path fill="#fff" d="M25.307.862h-3.824C6.384.862.011 8.488 0 21.975c0 13.498 6.384 21.124 21.483 21.124h3.824c15.1 0 21.473-7.626 21.484-21.124C46.78 8.477 40.407.862 25.307.862Zm-1.7 36.833h-.424c-7.18 0-11.188-4.248-11.188-15.72 0-11.472 4.009-15.71 11.188-15.71h.425c7.18 0 11.177 4.25 11.177 15.71s-3.998 15.72-11.177 15.72ZM64.298.862h-7.92c-2.69 0-4.14 1.743-4.14 4.478V42.86h7.931c2.691 0 4.13-1.743 4.13-4.489V.862ZM77.83 16.365C78.82 15.395 95.117.862 95.117.862h-5.72c-1.71 0-2.287-.065-4.139 1.623-1.852 1.689-13.563 11.897-16.94 15.252-2.92 2.887-2.67 5.905 0 8.716 2.669 2.81 11.1 12.114 12.419 13.509 1.94 2.048 4.358 2.876 8.16 2.876h11.166c-6.787-6.635-21.625-22.508-22.878-23.739-1.1-1.013-.36-1.754.643-2.734ZM150.253.862h-5.349c-3.148 0-5.174.904-6.656 4.456l-9.674 23.248 1.765-.512-9.38-22.442c-1.678-3.944-4.075-4.75-7.169-4.75h-8.279v42.04h5.207V11.615c2.517 5.818 10.328 23.826 11.439 26.67 1.264 3.202 2.081 4.161 4.358 4.161 2.277 0 3.039-2.179 3.53-3.399l10.894-26.789v24.98c0 3.41 1.95 5.622 4.978 5.622h6.635V.862h-2.299ZM186.978 19.153h-8.585c-5.741 0-8.334-2.625-8.334-6.7 0-4.074 3.421-6.199 8.127-6.199h15.993c4.118 0 4.728-5.392 4.728-5.392h-23.412c-9.739 0-16.766 3.584-17.333 10.981-.61 7.888 4.227 12.899 11.712 12.899h11.493c4.826 0 6.537 2.636 6.537 6.537 0 3.9-3.181 6.068-7.888 6.068h-16.178c-5.12 0-5.839 5.501-5.839 5.501h24.512c11.722 0 16.93-3.704 17.431-10.894.61-8.487-3.584-12.8-12.964-12.8Z"></path></svg>
-                        </div>
-                        <section class="work-head">
-                            
-                            <div class="inner">
+      <div class="">
+        <main>
+          <section class="work-detail-area">
+            <article class="work-mainVisual">
+              <svg xmlns="http://www.w3.org/2000/svg" role="img" aria-label="OKMS" width="200" height="44" viewBox="0 0 200 44" fill="none"><path fill="#fff" d="M25.307.862h-3.824C6.384.862.011 8.488 0 21.975c0 13.498 6.384 21.124 21.483 21.124h3.824c15.1 0 21.473-7.626 21.484-21.124C46.78 8.477 40.407.862 25.307.862Zm-1.7 36.833h-.424c-7.18 0-11.188-4.248-11.188-15.72 0-11.472 4.009-15.71 11.188-15.71h.425c7.18 0 11.177 4.25 11.177 15.71s-3.998 15.72-11.177 15.72ZM64.298.862h-7.92c-2.69 0-4.14 1.743-4.14 4.478V42.86h7.931c2.691 0 4.13-1.743 4.13-4.489V.862ZM77.83 16.365C78.82 15.395 95.117.862 95.117.862h-5.72c-1.71 0-2.287-.065-4.139 1.623-1.852 1.689-13.563 11.897-16.94 15.252-2.92 2.887-2.67 5.905 0 8.716 2.669 2.81 11.1 12.114 12.419 13.509 1.94 2.048 4.358 2.876 8.16 2.876h11.166c-6.787-6.635-21.625-22.508-22.878-23.739-1.1-1.013-.36-1.754.643-2.734ZM150.253.862h-5.349c-3.148 0-5.174.904-6.656 4.456l-9.674 23.248 1.765-.512-9.38-22.442c-1.678-3.944-4.075-4.75-7.169-4.75h-8.279v42.04h5.207V11.615c2.517 5.818 10.328 23.826 11.439 26.67 1.264 3.202 2.081 4.161 4.358 4.161 2.277 0 3.039-2.179 3.53-3.399l10.894-26.789v24.98c0 3.41 1.95 5.622 4.978 5.622h6.635V.862h-2.299ZM186.978 19.153h-8.585c-5.741 0-8.334-2.625-8.334-6.7 0-4.074 3.421-6.199 8.127-6.199h15.993c4.118 0 4.728-5.392 4.728-5.392h-23.412c-9.739 0-16.766 3.584-17.333 10.981-.61 7.888 4.227 12.899 11.712 12.899h11.493c4.826 0 6.537 2.636 6.537 6.537 0 3.9-3.181 6.068-7.888 6.068h-16.178c-5.12 0-5.839 5.501-5.839 5.501h24.512c11.722 0 16.93-3.704 17.431-10.894.61-8.487-3.584-12.8-12.964-12.8Z"></path></svg>
+            </article>
 
-                                <div class="work-head-info" style="margin-top:60px;">
-                                    <div>
-                                        <h2 class="typo-display-lg-bold fc-400" style="margin-bottom:20px">자사 솔루션 OKMS 리뉴얼</h2>
-                                        <p>
-                                            자사 솔루션 OKMS를 리뉴얼하는 프로젝트에서 퍼블리싱 담당하였습니다. SCSS를 팀내에 도입하였으며 아이콘,
-                                            타이포그래피 등 재사용이 가능하고 효율적으로 퍼블리싱할 수 있도록 신경쓰며 작업하였습니다.
-                                            개발 진행 중에 디자인 요청 없이 퍼블리싱단에서 바로 지원하며 빠르게 구축하였습니다.
-                                            기획서없이 진행되었던 프로젝트여서 사용성을 디자이너와 함께 고민하며 의견을 주고받으면서 작업하였으며 기획, 디자인단계에서 누락된 UI를 QA하며 작업하였습니다.
-                                        </p>
-                                        <div>
-                                            <span class="tag">Vue.js</span>
-                                            <span class="tag">Scss</span>
-                                            <span class="tag">BootStrab</span>
-                                            <span class="tag">반응형웹</span>
-                                        </div>
-                                        <div>
-                                            <a href="">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" aria-labelledby="github" role="img">
-                                                    <title id="github">github icon</title>
-                                                    <g fill-opacity="1">
-                                                    <path d="M10.2515 20.883C9.94209 20.9158 9.67959 20.9486 9.41709 20.9767C8.05302 21.1127 6.8624 20.7424 5.9624 19.6783C5.68115 19.3455 5.52178 18.9142 5.28271 18.5439C4.9124 17.9627 4.53271 17.3861 4.1249 16.8283C3.98428 16.6361 3.74053 16.5236 3.55303 16.3595C3.49209 16.308 3.47334 16.2095 3.43115 16.1299C3.51553 16.097 3.59521 16.0408 3.67959 16.0314C4.75771 15.933 5.51709 16.4299 6.04678 17.3252C6.70771 18.4408 7.66396 19.0502 8.9624 19.0502C9.3374 19.0502 9.7124 18.9236 10.0827 18.8392C10.153 18.8205 10.2374 18.7127 10.2468 18.633C10.3124 18.1455 10.3733 17.658 10.5983 17.2127C10.6827 17.0486 10.7811 16.8939 10.8796 16.7252C10.4999 16.6502 10.1343 16.5939 9.77334 16.5049C8.10927 16.083 6.73584 15.2486 5.93896 13.6642C5.62959 13.0455 5.45615 12.3799 5.43271 11.6861C5.39521 10.6174 5.40928 9.54392 5.6249 8.48923C5.77959 7.74861 6.06084 7.05955 6.62334 6.52517C6.74521 6.40798 6.76865 6.30486 6.70303 6.12673C6.38896 5.25017 6.35615 4.35955 6.62334 3.46423C6.67959 3.27205 6.73115 3.07986 6.7874 2.8783C8.07177 3.12205 8.83584 3.98923 9.55302 4.95017C10.2936 4.40173 11.1702 4.35486 12.0233 4.29861C13.0358 4.23298 14.053 4.24705 15.0608 4.41111C15.5858 4.49548 15.9093 4.6033 16.4202 4.90798C16.8608 4.4533 17.2733 3.99392 17.728 3.57673C18.089 3.24392 18.539 3.03298 19.0265 2.92048C19.1624 2.88767 19.2327 2.90173 19.289 3.05173C19.6686 4.08767 19.7249 5.11892 19.3077 6.15486C19.2515 6.29548 19.2561 6.39392 19.3733 6.50642C20.0483 7.14861 20.3577 7.9783 20.4608 8.87361C20.5546 9.7033 20.6061 10.5377 20.6061 11.372C20.6061 12.558 20.2546 13.6455 19.5093 14.5783C18.9843 15.2392 18.3046 15.7127 17.5358 16.0689C16.7905 16.4111 16.0124 16.608 15.2061 16.7111C15.1874 16.7158 15.1686 16.7299 15.1358 16.7439C15.689 17.5361 15.778 18.4267 15.7686 19.3502C15.7546 20.6955 15.7593 22.0361 15.7686 23.3814C15.7686 23.5924 15.7077 23.6439 15.5015 23.6439C13.8374 23.6346 12.1733 23.6346 10.5093 23.6439C10.303 23.6439 10.2374 23.5783 10.2374 23.3767C10.2468 22.6502 10.2421 21.9236 10.2421 21.1971C10.2515 21.0892 10.2515 20.9955 10.2515 20.883Z"></path></g>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div>                                        
-                                        <dl class="info">
-                                            <dt style="color:#888">작업기간</dt>
-                                            <dd>2주</dd>
-                                        </dl>
-                                        <dl class="info">
-                                            <dt style="color:#888">기여도</dt>
-                                            <dd>퍼블리싱 100%</dd>
-                                        </dl>
-                                    </div>
+            <article class="work-summary inner">
+              <h2
+                class="page-tit"
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-easing="ease-in-out"
+                data-aos-once="true"
+              >
+                자사 솔루션 OKMS 리뉴얼             
+              </h2>
+              <div class="d-flex">
+                <div
+                  class="left-area"
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  data-aos-easing="ease-in-out"
+                  data-aos-once="true"
+                >
+                  <p class="page-txt">
+                    d
+                  </p>
+                  <div
+                    class="left-area"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-once="true"
+                  >
+                      <span class="tag">queries</span>
+                      <span class="tag">queries</span>
+                      <span class="tag">queries</span>
+                      <span class="tag">queries</span>
+                  </div>
 
-                                </div>
-                                
-                            </div>
-                        </section>
+                  <a href="https://github.com/leesongyi-hub/pub-project">
+                    <svg role="img" aria-hidden="true" focusable="false" class="ico ico-s32">
+                      <use xlink:href="../assets/images/sp_svg.svg#ico-github" />
+                    </svg>
+                  </a>
 
-                        <section class="work-body inner">
-                            <h3 class="typo-display-sm-bold fc-400">퍼블리싱 리스트</h3>
-                            <p>아래 링크를 클릭하시면 새창으로 퍼블리싱 화면을 보실 수 있어요 😊</p>
-                            <ul class="box-list-area">
-                                <li class="box-list-item">
-                                    <a href="https://leesongyi-hub.github.io/#/main" target="_blank">
-                                        메인페이지                                        
-                                    </a>
-                                </li>
-                                <li class="box-list-item"><a href="https://leesongyi-hub.github.io/#/search" target="_blank">통합검색페이지</a></li>
-                                <li class="box-list-item"><a href="">모달모음</a></li>
-                                <li class="box-list-item"><a href="">공통UI</a></li>
-                            </ul>                                
-                        </section>
+                </div>
+                <div
+                  class="right-area"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  data-aos-once="true"
+                >
+                  <dl>
+                      <dt>Title</dt>
+                      <dd>content</dd>
+                  </dl>
+                  <dl>
+                      <dt>Title</dt>
+                      <dd>content</dd>
+                  </dl>
+                </div>
+              </div>
+            </article>
+            <article
+              class="work-cont inner"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              data-aos-easing="ease-in-out"
+              data-aos-once="true"
+            >
+                <h3 class="cont-tit">퍼블리싱 리스트</h3>
+                <p class="cont-txt">아래 버튼을 클릭하시면 해당페이지 퍼블리싱 화면을 확인하실 수 있습니다 😊</p>
+                <ul class="box-list-area">
+                  <li class="box-list-item">
+                    <a href="https://leesongyi-hub.github.io/#/main" target="_blank">
+                      메인페이지
+                      <svg role="img" aria-hidden="true" focusable="false" class="ico ico-s24">
+                        <use xlink:href="../assets/images/sp_svg.svg#ico-outlink" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="box-list-item">
+                    <a href="https://leesongyi-hub.github.io/#/main" target="_blank">
+                      통합검색페이지
+                      <svg role="img" aria-hidden="true" focusable="false" class="ico ico-s24">
+                        <use xlink:href="../assets/images/sp_svg.svg#ico-outlink" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="box-list-item">
+                    <a href="https://leesongyi-hub.github.io/#/main" target="_blank">
+                      모달 모음
+                      <svg role="img" aria-hidden="true" focusable="false" class="ico ico-s24">
+                        <use xlink:href="../assets/images/sp_svg.svg#ico-outlink" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="box-list-item">
+                    <a href="https://leesongyi-hub.github.io/#/main" target="_blank">
+                      공통 UI
+                      <svg role="img" aria-hidden="true" focusable="false" class="ico ico-s24">
+                        <use xlink:href="../assets/images/sp_svg.svg#ico-outlink" />
+                      </svg>
+                    </a>
+                  </li>
 
-                        <section class="work-body inner">
-                            <h3 class="typo-display-sm-bold fc-400">반응형</h3>
-                            <p>
-                                디자인 완료 후 퍼블리싱 진행하면서 반응형웹으로 개발스펙이 변경되어 퍼블리싱단에서 디자이너와 의논하여 분기점을 설정하였습니다.
-                                PC가 우선순위인만큼 반응형 중요도는 후순위여서 퍼블리싱단에서 디자인화면없이 UI가 깨지지 않도록 바로 작업하였습니다.
-                            </p>
-                            <div>
-                                <ul class="img-area" style="display:flex;border-radius: 4px;padding:40px;background-color:#f5f5f5;height:460px;overflow: hidden;">
-                                   <li style="flex:1;margin-right:40px;"><img src="../assets/images/bg-search-pc.png" alt=""></li> 
-                                   <li style="width:260px;"><img src="../assets/images/bg-search-mo.png" alt=""></li> 
-                                </ul>
-                            </div>                            
-                            <div></div>
-                        </section>
+                </ul>
+            </article>
 
-                        <section class="work-body inner">
-                            <h3 class="typo-display-sm-bold fc-400">Color Variables</h3>
-                            <p>
-                                디자인 완료 후 퍼블리싱 진행하면서 반응형웹으로 개발스펙이 변경되어 퍼블리싱단에서 디자이너와 의논하여 분기점을 설정하였습니다.
-                                PC가 우선순위인만큼 반응형 중요도는 후순위여서 퍼블리싱단에서 디자인화면없이 UI가 깨지지 않도록 바로 작업하였습니다.
-                            </p>
-                            <div>
-                                <ul class="img-area" style="display:flex;border-radius: 4px;padding:40px;background-color:#f5f5f5;height:460px;overflow: hidden;">
-                                   <li style="width: 50%;margin-right:20px;"><img src="../assets/images/bg-color-blue.png" alt=""></li> 
-                                   <li style="width:50%;"><img src="../assets/images/bg-color-green.png" alt=""></li> 
-                                </ul>
-                            </div>
-                            <div></div>
-                        </section>
+            <article
+              class="work-cont inner"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              data-aos-easing="ease-in-out"
+              data-aos-once="true"
+            >
+                <h3 class="cont-tit">Hover, focus, and other states</h3>
+                <p class="cont-txt">
+                    Tailwind lets you conditionally apply utility classes in different states using variant modifiers. For example, use hover:stroke-2 to only apply the stroke-2 utility on hover
+                </p>
+                <div>
+                    <div class="img-area"></div>
+                    <!-- <ul class="img-area" style="display:flex;border-radius: 4px;padding:40px;background-color:#f5f5f5;height:460px;overflow: hidden;">
+                        <li style="flex:1;margin-right:40px;"><img src="../assets/images/bg-search-pc.png" alt=""></li> 
+                        <li style="width:260px;"><img src="../assets/images/bg-search-mo.png" alt=""></li> 
+                    </ul> -->
+                </div>                            
+                <div></div>
+            </article>
 
-                        <section class="work-body inner">
-                            <h3 class="typo-display-sm-bold fc-400">Verder Prefix</h3>
-                            <p>
-                                디자인 완료 후 퍼블리싱 진행하면서 반응형웹으로 개발스펙이 변경되어 퍼블리싱단에서 디자이너와 의논하여 분기점을 설정하였습니다.
-                                PC가 우선순위인만큼 반응형 중요도는 후순위여서 퍼블리싱단에서 디자인화면없이 UI가 깨지지 않도록 바로 작업하였습니다.
-                            </p>
-                            <img src="../assets/images/okms.gif" alt="">
-                            <div></div>
-                        </section>
-                    </article>
-                </main>
-            </div>
-        </div>
-        <div class="fixed-btn">
-            <button type="button">
-                <svg aria-hidden="true" class="CustomButton-module--icon--dd70d" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.125" d="M6.504 15.5 2.254 10l4.25-5.5M2.746 10h15"></path></svg>
-            </button>
-            <button type="button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" aria-labelledby="dark" role="img"><title id="dark">dark icon</title> <g fill-opacity="1">
-                    <path d="M20.9618 12.79C20.8045 14.4922 20.1657 16.1144 19.1201 17.4668C18.0744 18.8192 16.6653 19.8458 15.0575 20.4265C13.4497 21.0073 11.7098 21.1181 10.0413 20.7461C8.37283 20.3741 6.84481 19.5345 5.63604 18.3258C4.42727 17.117 3.58775 15.589 3.21572 13.9205C2.84369 12.252 2.95453 10.5121 3.53528 8.9043C4.11602 7.29651 5.14265 5.88737 6.49503 4.84175C7.84741 3.79614 9.46961 3.15731 11.1718 3C10.1752 4.34827 9.69566 6.00945 9.82035 7.68141C9.94503 9.35338 10.6657 10.9251 11.8512 12.1106C13.0368 13.2961 14.6084 14.0168 16.2804 14.1415C17.9524 14.2662 19.6135 13.7866 20.9618 12.79Z"></path></g></svg>
-            </button>
-        </div>
+            <article
+              class="work-cont inner"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              data-aos-easing="ease-in-out"
+            >
+                <h3 class="cont-tit">Breakpoints and media queries</h3>
+                <p class="cont-txt">
+                    You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use md:stroke-2 to apply the stroke-2 utility at only medium screen sizes and above.
+                </p>
+                <div>
+                    <div class="img-area"></div>
+                    <!-- <ul class="img-area" style="display:flex;border-radius: 4px;padding:40px;background-color:#f5f5f5;height:460px;overflow: hidden;">
+                        <li style="width: 50%;margin-right:20px;"><img src="../assets/images/bg-color-blue.png" alt=""></li> 
+                        <li style="width:50%;"><img src="../assets/images/bg-color-green.png" alt=""></li> 
+                    </ul> -->
+                </div>
+                <div></div>
+            </article>
+
+            <article
+              class="work-cont inner"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              data-aos-easing="ease-in-out"
+              data-aos-once="true"
+            >
+                <h3 class="cont-tit">Customizing your theme</h3>
+                <p class="cont-txt">
+                    By default, Tailwind provides three stroke-width utilities. You change, add, or remove these by editing the theme.strokeWidth section of your Tailwind config.
+                </p>
+                <div class="img-area">
+                    <img src="../assets/images/okms.gif" alt="">
+                </div>
+                
+                <div></div>
+              </article>
+          </section>
+        </main>
+      </div>
     </div>
+
+    <div class="fixed-btn-area">
+        <button type="button" class="btn-top">
+          <svg role="img" aria-hidden="true" focusable="false" class="ico ico-s24">
+            <use xlink:href="../assets/images/sp_svg.svg#ico-top"></use>
+          </svg>
+        </button>
+        <button type="button" onclick="toggle_light_mode()">
+          <svg role="img" aria-hidden="true" focusable="false" class="ico-dark ico ico-s24">
+            <use xlink:href="../assets/images/sp_svg.svg#ico-dark"></use>
+          </svg>
+          <svg role="img" aria-hidden="true" focusable="false" class="ico-light ico ico-s24">
+            <use xlink:href="../assets/images/sp_svg.svg#ico-light"></use>
+          </svg>
+        </button>
+    </div>
+  </div>
+
+  <script src="../assets/js/common.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

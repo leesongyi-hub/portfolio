@@ -1,10 +1,4 @@
-@import '../abstracts/variables';
-
-/*
-  [Variables]
-*/
-
-$font-size-root:  14px;
+$font-size-root:  16px;
 
 $font-size-display-lg: round($font-size-root * 2.5);
 $font-size-display-md: round($font-size-root * 2.2);
@@ -100,7 +94,6 @@ $usage-map: (
 
 $weight-map: (
   bold,
-  semibold,
   medium,
   regular,
   light
@@ -127,11 +120,11 @@ $weight-map: (
 }
 
 [class*='typo-heading']{
-    color:var(--text-color-100);
+    color:var(--text-color-200);
 }
 
 [class*='typo-display']{
-    color:var(--text-color-100);
+    color:var(--text-color-200);
 }
 
 
@@ -151,12 +144,14 @@ $weight-map: (
 .fw-regular{font-weight:var(--font-weight-regular);}
 .fw-light{font-weight:var(--font-weight-light);}
 
-// .fc-100{color:var(--text-color-100);}
-// .fc-200{color:var(--text-color-200);}
-// .fc-300{color:var(--text-color-300);}
-// .fc-400{color:var(--text-color-400);}
-// .fc-500{color:var(--text-color-500);}
-// .fc-600{color:var(--text-color-600);}
-// .fc-700{color:var(--text-color-700);}
-// .fc-800{color:var(--text-color-800);}
-// .fc-900{color:var(--text-color-900);}
+.fc-100{color:var(--text-color-100);}
+.fc-200{color:var(--text-color-200);}
+.fc-300{color:var(--text-color-300);}
+.fc-400{color:var(--text-color-400);}
+.fc-500{color:var(--text-color-500);}
+.fc-600{color:var(--text-color-600);}
+.fc-700{color:var(--text-color-700);}
+.fc-800{color:var(--text-color-800);}
+.fc-900{color:var(--text-color-900);}
+
+

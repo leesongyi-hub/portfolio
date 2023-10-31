@@ -1,4 +1,22 @@
 :root{
+    --body-bg-color: #fff;
+
+    --base-color-primary-10:#F5FAFF;
+    --base-color-primary-20:#F0F7FF;
+    --base-color-primary-30:#E8F3FF;
+    --base-color-primary-40:#E0EFFF;
+    --base-color-primary-50:#C9E2FF;
+
+    --base-color-primary-100:#99C8FF;
+    --base-color-primary-200:#80B9FF;
+    --base-color-primary-300:#64A8FF;
+    --base-color-primary-400:#4593FC;
+    --base-color-primary-500:#3182F6;
+    --base-color-primary-600:#2272EB;
+    --base-color-primary-700:#1B64DA;
+    --base-color-primary-800:#1957C2;
+    --base-color-primary-900:#194AA6;
+
     --base-color-gray-10:#FAFAFA;
     --base-color-gray-20:#F5F5F5;
     --base-color-gray-30:#F2F2F2;
@@ -27,4 +45,66 @@
     --text-color-700: var(--base-color-gray-300);
     --text-color-800: var(--base-color-gray-200);
     --text-color-900: var(--base-color-gray-100);
+
+    --icon-color-100: var(--base-color-gray-900);
+    --icon-color-200: var(--base-color-gray-800);
+    --icon-color-300: var(--base-color-gray-700);
+    --icon-color-400: var(--base-color-gray-600);
+    --icon-color-500: var(--base-color-gray-500);
+    --icon-color-600: var(--base-color-gray-400);
+    --icon-color-700: var(--base-color-gray-300);
+    --icon-color-800: var(--base-color-gray-200);
+    --icon-color-900: var(--base-color-gray-100);
+
+    --border-color-light: var(--base-color-gray-50);
+    --border-color-default: var(--base-color-gray-60);
+    --border-color-dark: var(--base-color-gray-70);
+
+    --bg-color-light: var(--base-color-gray-10);
+    --bg-color-default: var(--base-color-gray-20);
+    --bg-color-dark: var(--base-color-gray-30);
+
+    --border-color-tonal-light: rgba(153, 200, 255, 0.1);
+    --border-color-tonal-default: rgba(153, 200, 255, 0.2);
+    --border-color-tonal-dark: rgba(153, 200, 255, 0.2);
+
+    --bg-color-tonal-light:  rgba(153, 200, 255, 0.15);
+    --bg-color-tonal-default:  rgba(153, 200, 255, 0.2);
+    --bg-color-tonal-dark:  rgba(153, 200, 255, 0.3);
+
+    --border-radius-max:30px;
+    --border-radius-default:4px;
+    --border-radius-circle:50%;
+}
+
+:root [data-theme=dark]{
+    --body-bg-color: var(--base-color-gray-900);
+
+    --text-color-100: var(--base-color-gray-10);
+    --text-color-200: var(--base-color-gray-20);
+    --text-color-300: var(--base-color-gray-30);
+    --text-color-400: var(--base-color-gray-40);
+    --text-color-500: var(--base-color-gray-50);
+    --text-color-600: var(--base-color-gray-60);
+    --text-color-700: var(--base-color-gray-70);
+    --text-color-800: var(--base-color-gray-80);
+    --text-color-900: var(--base-color-gray-90);
+
+    --icon-color-100: var(--base-color-gray-10);
+    --icon-color-200: var(--base-color-gray-20);
+    --icon-color-300: var(--base-color-gray-30);
+    --icon-color-400: var(--base-color-gray-40);
+    --icon-color-500: var(--base-color-gray-50);
+    --icon-color-600: var(--base-color-gray-60);
+    --icon-color-700: var(--base-color-gray-70);
+    --icon-color-800: var(--base-color-gray-80);
+    --icon-color-900: var(--base-color-gray-90);
+
+    --border-color-light: var(--base-color-gray-500);
+    --border-color-default: var(--base-color-gray-400);
+    --border-color-dark: var(--base-color-gray-300);
+
+    --bg-color-light: var(--base-color-gray-100);
+    --bg-color-default: var(--base-color-gray-200);
+    --bg-color-dark: var(--base-color-gray-300);
 }
