@@ -16,7 +16,10 @@
 .ico-s32{min-width:32px;width:32px;height:32px;}
 
 /* tag */
-.tag{padding:4px 16px;border:1px solid var(--border-color-default);border-radius: var(--border-radius-max);}
+.tag-list{display:flex;flex-wrap: wrap;}
+.tag{display:inline-flex !important;align-items: center;padding:4px 16px;margin:0 8px 8px 0;border:1px solid var(--border-color-default);border-radius: var(--border-radius-max);}
+.tag img{width:20px;height:20px;}
+.tag img + .label{margin-left:6px;}
 
 /* 테마아이콘 */
 .ico-light{display:none;}
@@ -36,7 +39,9 @@ body{background-color:var(--body-bg-color);}
 .work-summary .page-txt{margin-bottom:24px;}
 .work-summary .left-area{width:800px;margin-right:60px;}
 .work-summary .right-area{min-width:200px;flex:1;}
-.work-summary .right-area dl{margin-bottom:12px;}
+.work-summary .right-area dl{display:flex;margin-bottom:24px;padding-left:10px;border-left:2px solid var(--border-color-light);}
+.work-summary .right-area dt{@apply fc-900;width:80px;line-height:18px;}
+.work-summary .right-area dd{line-height:18px;}
 
 .work-cont{margin-bottom:120px;}
 .work-cont .cont-tit{margin-bottom:12px;}
@@ -54,6 +59,8 @@ body{background-color:var(--body-bg-color);}
 .box-list-item a:hover{transform:translateY(-10px) ;}
 .box-list-item a:hover svg{opacity: 1;}
 
-.img-area{width:100%;height:600px;border-radius: 8px;background-color:#f1f1f1;margin-top:30px;}
+.img-area{border-radius: 16px;overflow: hidden;}
+
+.btn-txtLink{color:red;}
 
 

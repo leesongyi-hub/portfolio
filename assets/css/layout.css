@@ -2,8 +2,7 @@
 body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, select, table, td, textarea, th, ul, a {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body, button, input, select, table, textarea {
@@ -29,6 +28,7 @@ textarea {
 }
 
 button, input {
+  -webkit-border-radius: 0;
   border-radius: 0;
   border: 0;
 }
@@ -141,8 +141,7 @@ body::-webkit-scrollbar {
 
 /* input */
 [type=checkbox], [type=radio] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
 }
 
@@ -286,7 +285,7 @@ h1, h2 {
 }
 
 :root [data-theme=dark] {
-  --body-bg-color: var(--base-color-gray-900);
+  --body-bg-color: var(--base-color-gray-800);
   --text-color-100: var(--base-color-gray-10);
   --text-color-200: var(--base-color-gray-20);
   --text-color-300: var(--base-color-gray-30);
@@ -801,8 +800,6 @@ h1, h2 {
 
 /* util */
 .d-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -862,10 +859,27 @@ h1, h2 {
 }
 
 /* tag */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .tag {
+  display: inline-flex !important;
+  align-items: center;
   padding: 4px 16px;
+  margin: 0 8px 8px 0;
   border: 1px solid var(--border-color-default);
   border-radius: var(--border-radius-max);
+}
+
+.tag img {
+  width: 20px;
+  height: 20px;
+}
+
+.tag img + .label {
+  margin-left: 6px;
 }
 
 /* 테마아이콘 */
@@ -896,15 +910,9 @@ body {
 }
 
 .work-mainVisual {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   height: 180px;
   background-color: #15c5ce;
 }
@@ -932,13 +940,24 @@ body {
 
 .work-summary .right-area {
   min-width: 200px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
 
 .work-summary .right-area dl {
-  margin-bottom: 12px;
+  display: flex;
+  margin-bottom: 24px;
+  padding-left: 10px;
+  border-left: 2px solid var(--border-color-light);
+}
+
+.work-summary .right-area dt {
+  @apply fc-900;
+  width: 80px;
+  line-height: 18px;
+}
+
+.work-summary .right-area dd {
+  line-height: 18px;
 }
 
 .work-cont {
@@ -964,15 +983,9 @@ body {
   height: 48px;
   border: 1px solid var(--border-color-default);
   border-radius: var(--border-radius-circle);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .fixed-btn-area button + button {
@@ -984,12 +997,8 @@ body {
 }
 
 .box-list-area {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .box-list-item {
@@ -997,34 +1006,25 @@ body {
 }
 
 .box-list-item a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   height: 100%;
   padding: 16px;
   background-color: var(--bg-color-tonal-default);
   border-radius: 4px;
   border: 1px solid var(--border-color-tonal-default);
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .box-list-item a svg {
   opacity: 0.5;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .box-list-item a:hover {
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 .box-list-item a:hover svg {
@@ -1032,9 +1032,10 @@ body {
 }
 
 .img-area {
-  width: 100%;
-  height: 600px;
-  border-radius: 8px;
-  background-color: #f1f1f1;
-  margin-top: 30px;
-}/*# sourceMappingURL=layout.css.map */
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.btn-txtLink {
+  color: red;
+}

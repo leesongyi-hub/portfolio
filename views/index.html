@@ -40,27 +40,44 @@
                   data-aos-once="true"
                 >
                   <p class="page-txt">
-                    d
+                    일반형 웹사이트였던 자사솔루션 OKMS의 반응형 웹 리뉴얼 퍼블리싱 업무를 담당하였습니다.
+                    해당 작업은 Vue.js 학습을 위해 HTML5, CSS3로 작업했던 결과물을 개인적으로 vue.js로 재구현한 작업물입니다.
+                    또한 스터디 목적으로 다양한 기술을 활용하여 더 효율적인 작업을 위해 PostCSS 및 Tailwind CSS도 활용해보았습니다.
                   </p>
                   <div
-                    class="left-area"
+                    class="tag-list"
                     data-aos="fade-up"
                     data-aos-duration="1000"
                     data-aos-easing="ease-in-out"
                     data-aos-once="true"
                   >
-                      <span class="tag">queries</span>
-                      <span class="tag">queries</span>
-                      <span class="tag">queries</span>
-                      <span class="tag">queries</span>
+                      <span class="tag">
+                        <img src="../assets/images/ico-vue.png" alt="Vue.js">
+                        <span class="label">Vue.js</span>
+                      </span>
+                      <span class="tag">
+                        <img src="../assets/images/ico-bootstrap.png" alt="SCSS">
+                        <span class="label">SCSS</span>
+                      </span>
+                      <span class="tag">
+                        <img src="../assets/images/ico-bootstrap.png" alt="bootstrap">
+                        <span class="label">bootstrap</span>
+                      </span>
+                      <span class="tag">
+                        <img src="../assets/images/ico-figma.png" alt="Figma">
+                        <span class="label">Figma</span>
+                      </span>
+                      <span class="tag">
+                        <img src="../assets/images/ico-figma.png" alt="Figma">
+                        <span class="label">SourceTree</span>
+                      </span>
+                      <a href="https://github.com/leesongyi-hub/pub-project" target="_blank" class="tag">
+                        <svg role="img" aria-hidden="true" focusable="false" class="ico ico-s24">
+                          <use xlink:href="../assets/images/sp_svg.svg#ico-github" />
+                        </svg>
+                        https://github.com/leesongyi-hub
+                      </a>
                   </div>
-
-                  <a href="https://github.com/leesongyi-hub/pub-project">
-                    <svg role="img" aria-hidden="true" focusable="false" class="ico ico-s32">
-                      <use xlink:href="../assets/images/sp_svg.svg#ico-github" />
-                    </svg>
-                  </a>
-
                 </div>
                 <div
                   class="right-area"
@@ -70,12 +87,16 @@
                   data-aos-once="true"
                 >
                   <dl>
-                      <dt>Title</dt>
-                      <dd>content</dd>
+                    <dt>Type</dt>
+                    <dd>반응형웹</dd>
                   </dl>
                   <dl>
-                      <dt>Title</dt>
-                      <dd>content</dd>
+                      <dt>기여도</dt>
+                      <dd>퍼블리싱 100%</dd>
+                  </dl>
+                  <dl>
+                    <dt>작업기간</dt>
+                    <dd>2023.10~</dd>
                   </dl>
                 </div>
               </div>
@@ -99,7 +120,7 @@
                     </a>
                   </li>
                   <li class="box-list-item">
-                    <a href="https://leesongyi-hub.github.io/#/main" target="_blank">
+                    <a href="https://leesongyi-hub.github.io/#/search" target="_blank">
                       통합검색페이지
                       <svg role="img" aria-hidden="true" focusable="false" class="ico ico-s24">
                         <use xlink:href="../assets/images/sp_svg.svg#ico-outlink" />
@@ -107,7 +128,7 @@
                     </a>
                   </li>
                   <li class="box-list-item">
-                    <a href="https://leesongyi-hub.github.io/#/main" target="_blank">
+                    <a href="https://leesongyi-hub.github.io/#/modal" target="_blank">
                       모달 모음
                       <svg role="img" aria-hidden="true" focusable="false" class="ico ico-s24">
                         <use xlink:href="../assets/images/sp_svg.svg#ico-outlink" />
@@ -133,9 +154,9 @@
               data-aos-easing="ease-in-out"
               data-aos-once="true"
             >
-                <h3 class="cont-tit">Hover, focus, and other states</h3>
+                <h3 class="cont-tit">다양한 상태에서도 견고한 UI 설계</h3>
                 <p class="cont-txt">
-                    Tailwind lets you conditionally apply utility classes in different states using variant modifiers. For example, use hover:stroke-2 to only apply the stroke-2 utility on hover
+                  개발 단계에서 실제 데이터가 들어왔을 때 텍스트 양이 증가하거나 계정에 따라 버튼의 유무 등 다양한 상황을 고려하여 레이아웃이 깨지지 않고 유지되도록 작업했습니다.
                 </p>
                 <div>
                     <div class="img-area"></div>
@@ -153,16 +174,13 @@
               data-aos-duration="1200"
               data-aos-easing="ease-in-out"
             >
-                <h3 class="cont-tit">Breakpoints and media queries</h3>
+                <h3 class="cont-tit">SCSS변수를 이용하여 테마변경</h3>
                 <p class="cont-txt">
-                    You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use md:stroke-2 to apply the stroke-2 utility at only medium screen sizes and above.
+                  고객사에게 솔루션을 제공할 때, 고객사의 브랜드 컬러를 고려한 컬러 수정을 비롯하여 버튼 크기, 그림자 등 다양한 UI 수정 요청이 있었습니다. 이전에는 CSS를 일일이 찾아
+                  수정하는 번거로운 방식으로 작업 효율이 낮았습니다. 이러한 문제를 해결하기 위해 SCSS 변수를 활용하여 테마 변경 및 추후 UI 수정 요청을 효율적으로 처리하기 위한 대비를 하였습니다.
                 </p>
-                <div>
-                    <div class="img-area"></div>
-                    <!-- <ul class="img-area" style="display:flex;border-radius: 4px;padding:40px;background-color:#f5f5f5;height:460px;overflow: hidden;">
-                        <li style="width: 50%;margin-right:20px;"><img src="../assets/images/bg-color-blue.png" alt=""></li> 
-                        <li style="width:50%;"><img src="../assets/images/bg-color-green.png" alt=""></li> 
-                    </ul> -->
+                <div class="img-area">
+                  <img src="../assets/images/gif-variable.gif" alt="">
                 </div>
                 <div></div>
             </article>
