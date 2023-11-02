@@ -17,9 +17,9 @@
 
 /* tag */
 .tag-list{display:flex;flex-wrap: wrap;}
-.tag{display:inline-flex !important;align-items: center;padding:4px 16px;margin:0 8px 8px 0;border:1px solid var(--border-color-default);border-radius: var(--border-radius-max);}
+.tag{display:inline-flex !important;align-items: center;padding:4px 16px;margin:0 8px 12px 0;background-color:var(--bg-color-default);border-radius: var(--border-radius-max);}
 .tag img{width:20px;height:20px;}
-.tag img + .label{margin-left:6px;}
+.tag .ico + .label{margin-left:6px;}
 
 /* 테마아이콘 */
 .ico-light{display:none;}
@@ -43,7 +43,7 @@ body{background-color:var(--body-bg-color);}
 .work-summary .right-area dt{@apply fc-900;width:80px;line-height:18px;}
 .work-summary .right-area dd{line-height:18px;}
 
-.work-cont{margin-bottom:120px;}
+.work-cont{margin-bottom:160px;}
 .work-cont .cont-tit{margin-bottom:12px;}
 .work-cont .cont-txt{margin-bottom:24px;}
 
@@ -53,14 +53,18 @@ body{background-color:var(--body-bg-color);}
 .fixed-btn-area .ico{color:var(--icon-color-100)}
 
 .box-list-area{display:flex;justify-content:space-between;}
-.box-list-item{width:24%;}
+.box-list-item{width:32%;}
 .box-list-item a{display:flex;align-items: center;justify-content: space-between;width:100%;height:100%;padding:16px;background-color: var(--bg-color-tonal-default);border-radius: 4px;border:1px solid var(--border-color-tonal-default);transition: .3s;}
 .box-list-item a svg{opacity: .5;transition: .3s;}
 .box-list-item a:hover{transform:translateY(-10px) ;}
 .box-list-item a:hover svg{opacity: 1;}
 
-.img-area{border-radius: 16px;overflow: hidden;}
+.img-area{position:relative;border-radius: 16px;overflow: hidden;border:1px solid #272727;}
 
 .btn-txtLink{color:red;}
 
+.btn-github .ico{color:var(--icon-color-100);}
+.btn-github .ico + .label{margin-left:6px;text-decoration: underline;}
+
+.badge{position:absolute;top:8px;right:8px;padding:4px 20px;color:#fff;font-weight:bold;background-color:rgba(0,0,0,.7);border-radius: var(--border-radius-max);}
 

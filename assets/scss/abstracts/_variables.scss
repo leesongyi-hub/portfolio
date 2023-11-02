@@ -1,6 +1,9 @@
 :root{
     --body-bg-color: #fff;
 
+    --base-color-white: #fff;
+    --base-color-black: #000;
+
     --base-color-primary-10:#F5FAFF;
     --base-color-primary-20:#F0F7FF;
     --base-color-primary-30:#E8F3FF;
@@ -72,6 +75,8 @@
     --bg-color-tonal-default:  rgba(153, 200, 255, 0.2);
     --bg-color-tonal-dark:  rgba(153, 200, 255, 0.3);
 
+    --bg-color-primary: var(--base-color-primary-500);
+
     --border-radius-max:30px;
     --border-radius-default:4px;
     --border-radius-circle:50%;
@@ -79,6 +84,9 @@
 
 :root [data-theme=dark]{
     --body-bg-color: var(--base-color-gray-800);
+
+    --base-color-white: #000;
+    --base-color-black: #fff;
 
     --text-color-100: var(--base-color-gray-10);
     --text-color-200: var(--base-color-gray-20);
@@ -105,6 +113,6 @@
     --border-color-dark: var(--base-color-gray-300);
 
     --bg-color-light: var(--base-color-gray-100);
-    --bg-color-default: var(--base-color-gray-200);
+    --bg-color-default: var(--base-color-gray-700);
     --bg-color-dark: var(--base-color-gray-300);
 }
