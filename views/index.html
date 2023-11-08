@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work | OKMS</title>
-    <!-- <link rel="stylesheet" href="../assets/css/layout.css"> -->
-    <link rel="stylesheet" href="../assets/css/output.css">
-    <link rel="stylesheet" href="../assets/css/tailwind.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work | OKMS</title>
+  <link rel="stylesheet" href="../assets/css/output.css">
+  <link rel="stylesheet" href="../assets/css/tailwind.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
   <div class="wrap" >
     <div class="content">
-
       <div class="">
         <main>
           <section class="work-detail-area">
-            <article class="work-mainVisual">
+            <article
+              class="work-mainVisual"
+              class="page-tit"
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-easing="ease-in-out"
+              data-aos-once="true"
+            >
               <svg xmlns="http://www.w3.org/2000/svg" role="img" aria-label="OKMS" width="200" height="44" viewBox="0 0 200 44" fill="none"><path fill="#fff" d="M25.307.862h-3.824C6.384.862.011 8.488 0 21.975c0 13.498 6.384 21.124 21.483 21.124h3.824c15.1 0 21.473-7.626 21.484-21.124C46.78 8.477 40.407.862 25.307.862Zm-1.7 36.833h-.424c-7.18 0-11.188-4.248-11.188-15.72 0-11.472 4.009-15.71 11.188-15.71h.425c7.18 0 11.177 4.25 11.177 15.71s-3.998 15.72-11.177 15.72ZM64.298.862h-7.92c-2.69 0-4.14 1.743-4.14 4.478V42.86h7.931c2.691 0 4.13-1.743 4.13-4.489V.862ZM77.83 16.365C78.82 15.395 95.117.862 95.117.862h-5.72c-1.71 0-2.287-.065-4.139 1.623-1.852 1.689-13.563 11.897-16.94 15.252-2.92 2.887-2.67 5.905 0 8.716 2.669 2.81 11.1 12.114 12.419 13.509 1.94 2.048 4.358 2.876 8.16 2.876h11.166c-6.787-6.635-21.625-22.508-22.878-23.739-1.1-1.013-.36-1.754.643-2.734ZM150.253.862h-5.349c-3.148 0-5.174.904-6.656 4.456l-9.674 23.248 1.765-.512-9.38-22.442c-1.678-3.944-4.075-4.75-7.169-4.75h-8.279v42.04h5.207V11.615c2.517 5.818 10.328 23.826 11.439 26.67 1.264 3.202 2.081 4.161 4.358 4.161 2.277 0 3.039-2.179 3.53-3.399l10.894-26.789v24.98c0 3.41 1.95 5.622 4.978 5.622h6.635V.862h-2.299ZM186.978 19.153h-8.585c-5.741 0-8.334-2.625-8.334-6.7 0-4.074 3.421-6.199 8.127-6.199h15.993c4.118 0 4.728-5.392 4.728-5.392h-23.412c-9.739 0-16.766 3.584-17.333 10.981-.61 7.888 4.227 12.899 11.712 12.899h11.493c4.826 0 6.537 2.636 6.537 6.537 0 3.9-3.181 6.068-7.888 6.068h-16.178c-5.12 0-5.839 5.501-5.839 5.501h24.512c11.722 0 16.93-3.704 17.431-10.894.61-8.487-3.584-12.8-12.964-12.8Z"></path></svg>
             </article>
 
@@ -122,7 +127,7 @@
                 <p class="cont-txt">👇🏻 아래 버튼을 클릭하시면 해당페이지 퍼블리싱 화면을 확인하실 수 있습니다!</p>
                 <ul class="box-list-area">
                   <li class="box-list-item">
-                    <a href="https://leesongyi-hub.github.io/#/main" target="_blank">
+                    <a href="https://leesongyi-hub.github.io/#/main" target="_blank" title="새창열림">
                       메인페이지
                       <svg role="img" aria-hidden="true" focusable="false" class="ico ico-s24">
                         <use xlink:href="../assets/images/sp_svg.svg#ico-outlink" />
@@ -130,8 +135,16 @@
                     </a>
                   </li>
                   <li class="box-list-item">
-                    <a href="https://leesongyi-hub.github.io/#/search" target="_blank">
+                    <a href="https://leesongyi-hub.github.io/#/search" target="_blank" title="새창열림">
                       통합검색페이지
+                      <svg role="img" aria-hidden="true" focusable="false" class="ico ico-s24">
+                        <use xlink:href="../assets/images/sp_svg.svg#ico-outlink" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="box-list-item">
+                    <a href="https://leesongyi-hub.github.io/#/document" target="_blank" title="새창열림">
+                      문서상세페이지
                       <svg role="img" aria-hidden="true" focusable="false" class="ico ico-s24">
                         <use xlink:href="../assets/images/sp_svg.svg#ico-outlink" />
                       </svg>
@@ -174,20 +187,21 @@
             </article>
 
             <article
-              class="work-cont inner"
+              class="work-cont"
               data-aos="fade-up"
               data-aos-duration="1200"
               data-aos-easing="ease-in-out"
             >
+              <div class="inner">
                 <h3 class="cont-tit">SCSS변수를 이용하여 테마변경</h3>
                 <p class="cont-txt">
                   고객사에게 솔루션을 제공할 때, 고객사의 브랜드 컬러를 고려한 컬러 수정 및 버튼 크기, 그림자와 같은 다양한 UI 수정 요청이 있었습니다. 이전에는 CSS를 일일이 찾아 수정해야 했기 때문에 작업 효율이 낮았습니다. 이런 문제를 해결하기 위해 SCSS 변수를 활용하여 테마 변경 및 향후 UI 수정 요청을 효율적으로 처리할 수 있게 작업하였습니다.
                 </p>
+              </div>
                 <div class="img-area">
                   <span class="badge">GIF</span>
-                  <img src="../assets/images/gif-variable.gif" alt="" loop="infinite">
+                  <img src="../assets/images/img_variables.gif" alt="" loop="infinite">
                 </div>
-                <div></div>
             </article>
           </section>
         </main>
@@ -200,7 +214,7 @@
             <use xlink:href="../assets/images/sp_svg.svg#ico-top"></use>
           </svg>
         </button>
-        <button type="button" onclick="toggle_light_mode()">
+        <button type="button" class="btn-toggle-theme">
           <svg role="img" aria-hidden="true" focusable="false" class="ico-dark ico ico-s24">
             <use xlink:href="../assets/images/sp_svg.svg#ico-dark"></use>
           </svg>

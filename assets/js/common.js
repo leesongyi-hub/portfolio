@@ -1,39 +1,36 @@
-let app = document.getElementsByTagName("BODY")[0];
-if (localStorage.lightMode == "dark") {
-  app.setAttribute("data-theme", "dark");
+const root = document.documentElement;
+
+function setTheme(theme) {
+  localStorage.lightMode = theme;
+  root.setAttribute('data-theme', theme);
 }
 
-function toggle_light_mode() {
-  let app = document.getElementsByTagName("BODY")[0];
-  if (localStorage.lightMode == "dark") {
-    localStorage.lightMode = "light";
-    app.setAttribute("data-theme", "light");
+function toggleTheme() {
+  if (localStorage.lightMode === 'dark') {
+    setTheme('light');
   } else {
-    localStorage.lightMode = "dark";
-    app.setAttribute("data-theme", "dark");
+    setTheme('dark');
   }
 }
 
-window.addEventListener(
-  "storage",
-  function () {
-    if (localStorage.lightMode == "dark") {
-      app.setAttribute("data-theme", "dark");
-    } else {
-      app.setAttribute("data-theme", "light");
-    }
-  },
-  false
-);
+function updateTheme() {
+  root.setAttribute('data-theme', localStorage.lightMode || 'light');
+}
 
-// Top으로
-let topBtn = document.querySelector('.btn-top');
+updateTheme()
 
-topBtn.addEventListener('click', function(e) {  
+let $btnToggleTheme = document.querySelector('.btn-toggle-theme');
+$btnToggleTheme.addEventListener('click', function(e) {  
+  toggleTheme();
+});
+
+// 최상단 이동
+let $topBtn = document.querySelector('.btn-top');
+
+$topBtn.addEventListener('click', function(e) {  
   e.preventDefault();
-  let scrollOptions = {
+  window.scrollTo({
     top: 0,
-    behavior: 'smooth'
-  };
-  window.scrollTo(scrollOptions);
+    behavior: 'smooth',
+  });
 });
