@@ -1,6 +1,8 @@
-.wrap{min-width:1280px;overflow-x:auto;}
+
 /* util */
 .d-flex{display:flex;}
+.flex-wrap{flex-wrap: wrap;}
+.mb-24{margin-bottom:24px !important;}
 
 /* typo */
 .page-tit{@apply typo-display-lg-bold fc-200;}
@@ -30,7 +32,7 @@
 
 /* layout */
 body{background-color:var(--body-bg-color);}
-.inner{width:1024px;margin: 0 auto;}
+.inner{max-width:1280px;margin: 0 auto;padding:0 40px;}
 
 .work-mainVisual{display:flex;align-items: center;justify-content:center;height:180px;background-color:#15c5ce;}
 .work-mainVisual svg{width:70%;}
@@ -38,15 +40,16 @@ body{background-color:var(--body-bg-color);}
 .work-summary{margin:60px auto 80px;}
 .work-summary .page-tit{margin-bottom:16px;}
 .work-summary .page-txt{margin-bottom:24px;}
-.work-summary .left-area{width:800px;margin-right:60px;}
+.work-summary .work-summary-cont{display:flex;}
+.work-summary .left-area{width:800px;margin-right:60px;margin-bottom:16px;}
 .work-summary .right-area{min-width:200px;flex:1;}
 .work-summary .right-area dl{display:flex;margin-bottom:24px;padding-left:10px;border-left:2px solid var(--border-color-light);}
 .work-summary .right-area dt{@apply fc-900;width:80px;line-height:18px;}
 .work-summary .right-area dd{line-height:18px;}
 
 .work-cont{margin-bottom:160px;}
-.work-cont .cont-tit{margin-bottom:12px;}
-.work-cont .cont-txt{margin-bottom:24px;}
+.work-cont .cont-tit{margin-bottom:24px;}
+.work-cont .cont-txt{margin-bottom:48px;}
 
 .fixed-btn-area{position:fixed;bottom:40px;right:40px;}
 .fixed-btn-area button{width:48px;height:48px;background-color:var(--body-bg-color);border:1px solid var(--border-color-default);border-radius:var(--border-radius-circle);display:flex;align-items: center;justify-content: center;}
@@ -60,37 +63,41 @@ body{background-color:var(--body-bg-color);}
 .box-list-item a:hover{transform:translateY(-10px) ;}
 .box-list-item a:hover svg{opacity: 1;}
 
-// .img-area{position:relative;border-radius: 16px;overflow: hidden;border:1px solid #272727;}
-
 .btn-github .ico{color:var(--icon-color-100);}
 .btn-github .ico + .label{margin-left:6px;text-decoration: underline;}
 
-.badge{position:absolute;top:8px;right:8px;color:#fff;font-weight:bold;background-color:rgba(0,0,0,.7);border-radius: var(--border-radius-max);}
-
-.work-cont-bg{background-color:#5cc3c8;background-image:url(../images/bg-ui.png);height: 800px;padding-top:80px;}
-.work-cont-bg{
+.img-area{position:relative;}
+.img-area .badge{position:absolute;top:24px;right:40px;color:#fff;font-weight:bold;padding:4px 16px;background-color:rgba(0,0,0,.7);border-radius: var(--border-radius-max);}
+.img-area.bg{background-color:#f5f5f5;}
+.img-area.bg{
   background:
-  linear-gradient(to top,
+  linear-gradient(to bottom,
   rgba(255, 255, 255, 0)0%,
   rgba(255, 255, 255, 0)20%,
-  rgba(255, 255, 255, 1)80%,
-  rgba(255, 255, 255, 1)90%,
+  rgba(255, 255, 255, 0.2)80%,
+  rgba(255, 255, 255, 0.5)90%,
   rgba(255, 255, 255, 1)100%),
-  url(../images/bg-ui.png);
+  url(../images/bg-ui.png)  no-repeat top center;
+  background-size: cover;
   height:800px;
-  padding:80px 0;
 }
-[data-theme="dark"] .work-cont-bg{
+[data-theme="dark"] .img-area.bg{
   background:
-  linear-gradient(to top,
+  linear-gradient(to bottom,
   rgba(39, 39, 39, 0)0%,
-  rgba(39, 39, 39, 0.4)30%,
-  rgba(39, 39, 39, 0.5)40%,
-  rgba(39, 39, 39, 0.7)50%,
-  rgba(39, 39, 39, 1)80%,
-  rgba(39, 39, 39, 1)90%,
-  ),
-  url(../images/bg-ui.png);
+  rgba(39, 39, 39, 0)20%,
+  rgba(39, 39, 39, 0.2)80%,
+  rgba(39, 39, 39, 0.5)90%,
+  rgba(39, 39, 39, 1)100%),
+  url(../images/bg-ui.png)  no-repeat top center;
+  background-size: cover;
   height:800px;
-  padding:80px 0;
+}
+
+@media (max-width: 768px) {
+  .work-summary .work-summary-cont{flex-wrap: wrap;}
+  .work-summary .left-area{margin-right:0;}
+
+  .box-list-area{flex-wrap: wrap;}
+  .box-list-item{width:49%;margin-bottom:16px;}
 }
